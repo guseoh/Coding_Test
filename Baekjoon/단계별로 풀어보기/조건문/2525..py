@@ -1,15 +1,28 @@
 a,b = map(int, input().split())
 c = int(input())
+# z = b + c
 
-# 30 + 20 50
-# 40 + 80 120
-# 48 + 25 76
+# if (z >= 60):
+#     if (a == 23):
+#         print((z // 60) - 1, (z % 60)) 
+#     else:
+#         print(a + (z // 60), (z % 60))
+# else:
+#     print(a, z)
 
-if (b + c > 60):
-    z = b + c
-    if (a == 23):
-        print((z // 60) - 1, 60 - (z % 60))
-    else:
-        print(a + (z // 60), 60 - (z % 60))
+
+z = b + c
+hour = (z) // 60
+min  = (z) % 60
+
+if z >= 60:
+    if(a + hour >= 24):
+        a -= 24
+    a += hour
+    print(a, min)
+
 else:
-    print(a, b + c)
+    if(a >= 24):
+        a -= 24
+    print(a, z)
+
