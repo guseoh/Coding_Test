@@ -6,5 +6,5 @@ z = []
 for _ in range(30):
     x = int(input())
     
-    if x in a:
-        print(x)
+    if x not in a:
+        z.append(x)
