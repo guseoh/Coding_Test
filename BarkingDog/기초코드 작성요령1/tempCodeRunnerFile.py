@@ -1,2 +1,2 @@
 
-        M.append(y * 15)
+a = int(input())
