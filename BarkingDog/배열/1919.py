@@ -15,3 +15,6 @@ cnt = 0
 for s in alph:
     cnt += abs(s)
 print(cnt)
+
+# 알파벳 개수 26개
+# ord(): 주어진 문자의 유니코드 코드 포인트를 나타내는 정수를 반환
